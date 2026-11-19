@@ -1,0 +1,9 @@
+Flask
+PyMuPDF
+python-docx
+spacy
+scikit-learn
+pandas
+numpy
+matplotlib
+Flask-Cors

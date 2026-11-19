@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentIQ | AI Resume Analyzer</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Talent<span>IQ</span></div>
+        <div class="nav-label">AI Recruitment Intelligence</div>
+    </header>
+
+    <main class="container">
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <p class="eyebrow">SMARTER RECRUITMENT STARTS HERE</p>
+
+            <h1>AI Resume <span>Analyzer</span></h1>
+
+            <p class="subtitle">
+                Analyze, compare and rank candidates against your job requirements.
+            </p>
+        </section>
+
+        <!-- UPLOAD SECTION -->
+        <section class="upload-section">
+
+            <div class="section-heading">
+                <h2>Candidate Screening</h2>
+                <p>Upload resumes and enter the job description.</p>
+            </div>
+
+            <form id="uploadForm">
+
+                <div class="form-group">
+
+                    <label for="jobDescription">Job Description</label>
+
+                    <textarea
+                        id="jobDescription"
+                        placeholder="Enter the job role, required skills and qualifications..."
+                        required
+                    ></textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="resumeFiles">Upload Resumes</label>
+
+                    <div class="upload-box">
+
+                        <div class="upload-icon">↑</div>
+
+                        <p>Choose PDF or DOCX resumes</p>
+
+                        <small>You can select multiple files</small>
+
+                        <input
+                            type="file"
+                            id="resumeFiles"
+                            name="resumes"
+                            accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                            multiple
+                            required
+                        >
+
+                    </div>
+
+                    <p id="fileInfo">No files selected</p>
+
+                </div>
+
+                <button type="submit" id="analyzeBtn">
+                    Analyze Candidates →
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- RESULTS SECTION -->
+        <section class="results-section">
+
+            <div class="section-heading">
+                <h2>Screening Results</h2>
+                <p>Candidate rankings based on job compatibility.</p>
+            </div>
+
+            <!-- STATISTICS -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <p>Total Candidates</p>
+                    <h3 id="totalCandidates">0</h3>
+                </div>
+
+                <div class="stat-card">
+                    <p>Average Match</p>
+                    <h3 id="averageMatch">0%</h3>
+                </div>
+
+                <div class="stat-card">
+                    <p>Top Match</p>
+                    <h3 id="topMatch">0%</h3>
+                </div>
+
+            </div>
+
+            <!-- EXPORT BUTTON -->
+            <button
+                id="exportBtn"
+                type="button"
+                style="display: none;"
+            >
+                Download Candidate Report ↓
+            </button>
+
+            <!-- DYNAMIC RESULTS -->
+            <div id="results">
+
+                <div class="empty-state">
+                    <h3>No candidates analyzed yet</h3>
+
+                    <p>
+                        Upload resumes to see your screening results here.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        TalentIQ — AI-Powered Candidate Intelligence System
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="/js/script.js"></script>
+
+</body>
+</html>

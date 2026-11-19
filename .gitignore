@@ -1,0 +1,28 @@
+
+# Python environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Uploaded resumes and generated files
+uploads/*
+!uploads/.gitkeep
+
+# Local database
+database/*
+!database/.gitkeep
+
+# IDE files
+.vscode/
+
+# Environment variables
+.env
+
+# Operating system files
+.DS_Store
+Thumbs.db
+# Created by venv; see https://docs.python.org/3/library/venv.html
+*
