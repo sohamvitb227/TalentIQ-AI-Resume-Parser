@@ -139,8 +139,9 @@ TalentIQ is a project designed to help with the initial resume screening process
 
 ## Author
 
-**Your Name**
+**SOHAM DAS**
 
-B.Tech CSE (AI & ML)
+B.Tech CSE
+VIT BHOPAL UNIVERSITY
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub: https://github.com/sohamvitb227
